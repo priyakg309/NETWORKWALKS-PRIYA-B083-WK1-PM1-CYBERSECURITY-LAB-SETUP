@@ -174,7 +174,7 @@ The snapshot represents the clean baseline of the laboratory. If a future exerci
 
 ## 🐞 Problems Encountered & Solutions
 
-****Problem 1.Internet Connectivity After Static IP Configuration**
+**Problem 1.Internet Connectivity After Static IP Configuration**
 
 After manually configuring the IPv4 settings, Internet connectivity may fail depending on the Kali/NetworkManager configuration.
 One workaround used during this lab was:
@@ -189,12 +189,12 @@ Important: Network interface and connection names may differ between systems. St
 The VM initially failed to start because hardware virtualization was disabled in the system firmware/BIOS.
 
 The issue was resolved by:
--1.Restarting the computer.
--2.Entering BIOS/UEFI settings.
--3.Enabling Intel VT-x / hardware virtualization.
--4.Saving the configuration.
--5.Restarting the computer.
--6.Starting the Kali VM again.
+ - 1.Restarting the computer.
+ - 2.Entering BIOS/UEFI settings.
+ - 3.Enabling Intel VT-x / hardware virtualization.
+ - 4.Saving the configuration.
+ - 5.Restarting the computer.
+ - 6.Starting the Kali VM again.
 
 After enabling virtualization, the VM started successfully.
 

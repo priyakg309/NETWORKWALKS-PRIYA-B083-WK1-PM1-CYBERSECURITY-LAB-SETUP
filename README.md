@@ -173,7 +173,7 @@ The snapshot represents the clean baseline of the laboratory. If a future exerci
 
 ## 🐞 Problems Encountered & Solutions
 
-Problem 1. Internet Connectivity After Static IP Configuration
+****Problem 1. **Internet Connectivity After Static IP Configuration**
 
 After manually configuring the IPv4 settings, Internet connectivity may fail depending on the Kali/NetworkManager configuration.
 One workaround used during this lab was:
@@ -181,57 +181,70 @@ sudo nmcli connection modify "Wired connection 1" ipv4.dad-timeout 0
 
 The network connection was then restarted/rebooted and connectivity was tested again.
 Important: Network interface and connection names may differ between systems. Students should first identify their actual connection name before running an nmcli command.
-Problem 2. VirtualBox VT-x / Virtualization Error
 
+---
+
+**Problem 2. VirtualBox VT-x / Virtualization Error
+**
 The VM initially failed to start because hardware virtualization was disabled in the system firmware/BIOS.
 The issue was resolved by:
-Restarting the computer.
-Entering BIOS/UEFI settings.
-Enabling Intel VT-x / hardware virtualization.
-Saving the configuration.
-Restarting the computer.
-Starting the Kali VM again.
+1.Restarting the computer.
+2.Entering BIOS/UEFI settings.
+3.Enabling Intel VT-x / hardware virtualization.
+4.Saving the configuration.
+5.Restarting the computer.
+6.Starting the Kali VM again.
+
 After enabling virtualization, the VM started successfully.
-💡 What I Learned
+
+----
+
+**💡 What I Learned**
 
 Through this project, I learned how to create and configure a virtual environment for cybersecurity practice.
 The most important concepts I learned include:
-1. NAT vs NAT Network
 
+**1. NAT vs NAT Network**
 A standard NAT configuration and a NAT Network serve different purposes.
 A NAT Network allows multiple VMs connected to the same virtual network to communicate with one another while providing network address translation for external connectivity.
 This makes it useful for building a multi-machine cybersecurity laboratory.
 
-2. Virtual Machine Networking
-
+**2. Virtual Machine Networking**
 I learned how VirtualBox virtual network adapters connect virtual machines to different types of networks and how network configuration affects communication between machines.
 
-3. Static IP Configuration
-
+**3. Static IP Configuration**
 I learned how to configure and verify IPv4 addressing, subnet masks, gateways, and DNS settings in Kali Linux.
 
-4. VM Snapshots
-
+**4. VM Snapshots**
 I learned that a clean snapshot should be created before performing risky or experimental activities.
 This provides a known-good recovery point for future cybersecurity exercises.
 
-5. Documentation
-
+**5. Documentation**
 I learned that documenting commands, configuration, screenshots, problems, and solutions is an important part of a professional cybersecurity project.
 
-🔐 Security & Ethical Use
+----
+
+🔐 **Security & Ethical Use**
 
 This laboratory is intended strictly for education purposes only.
 
-🔗 Tools & Resources
+----
+
+🔗 **Tools & Resources**
 
 7-Zip: https://7-zip.org/download.html
 VirtualBox: https://virtualbox.org/wiki/Downloads
 Kali Linux: https://kali.org/get-kali
 
-👤 Author
+---
+
+👤 **Author**
 
 Priya Kishore Gehani
 Cybersecurity Professional B082
 LinkedIn: www.linkedin.com/in/priyagehani30
-📌 Project Information
+
+---
+📌 **Project Information**
+
+Program Name: Cybersecurity at Networkwalks | Week: 01 | Project: Cybersecurity & Pentesting Lab Setup | Repository: GitHub

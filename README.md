@@ -241,9 +241,9 @@ This laboratory is intended strictly for education purposes only.
 
 👤 **Author**
 
-Priya Kishore Gehani
-Cybersecurity Professional B083
-LinkedIn: www.linkedin.com/in/priyagehani30
+Priya Kishore Gehani</b>
+Cybersecurity Professional B083</b>
+**LinkedIn:** www.linkedin.com/in/priyagehani30
 
 ---
 📌 **Project Information**

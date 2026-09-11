@@ -108,6 +108,8 @@ A dedicated NAT Network was created in VirtualBox.
   - DHCP: Enabled
   - IPv6: Disabled
 
+<img width="2729" height="1686" alt="2-screenshot-network-settings-1" src="https://github.com/user-attachments/assets/9fc51fd6-89c2-414b-86fa-ce2af34d201a" />
+
 A NAT Network was selected because multiple virtual machines connected to the same NAT Network can communicate with one another while also having outbound network connectivity. This will allow future attacker and target VMs to communicate within the lab.
 
 ### Step 4. Import Kali Linux
@@ -122,6 +124,8 @@ The VM network adapter was configured as follows:
 The VM was allocated:
 - **RAM:** 2048 MB
 
+<img width="1280" height="800" alt="3-screenshot-kali-linux" src="https://github.com/user-attachments/assets/d585c48f-035b-4a44-8c9b-008024cecc3e" />
+
 A shared folder was also configured for transferring required files between the host operating system and the Kali VM.
 
 ### Step 5. Configure the Kali Linux Network
@@ -134,6 +138,9 @@ Example configuration:
 - **DNS:** 8.8.8.8
 
 A consistent IP address makes it easier to document the lab and reference the Kali machine in future exercises.
+
+<img width="3247" height="1887" alt="4-screenshot-kali-network-settings" src="https://github.com/user-attachments/assets/c0ddc374-150f-4d7a-a953-27b7027dca02" />
+
 
 ### Step 6. Create a Clean VM Snapshot
 After completing the initial configuration, a VirtualBox snapshot was created.
@@ -166,11 +173,65 @@ The snapshot represents the clean baseline of the laboratory. If a future exerci
 
 ## 🐞 Problems Encountered & Solutions
 
-Documenting problems is an important part of the project.
+Problem 1. Internet Connectivity After Static IP Configuration
 
-### Problem 1. Internet Connectivity After Static IP Configuration
 After manually configuring the IPv4 settings, Internet connectivity may fail depending on the Kali/NetworkManager configuration.
-
 One workaround used during this lab was:
-```bash
 sudo nmcli connection modify "Wired connection 1" ipv4.dad-timeout 0
+
+The network connection was then restarted/rebooted and connectivity was tested again.
+Important: Network interface and connection names may differ between systems. Students should first identify their actual connection name before running an nmcli command.
+Problem 2. VirtualBox VT-x / Virtualization Error
+
+The VM initially failed to start because hardware virtualization was disabled in the system firmware/BIOS.
+The issue was resolved by:
+Restarting the computer.
+Entering BIOS/UEFI settings.
+Enabling Intel VT-x / hardware virtualization.
+Saving the configuration.
+Restarting the computer.
+Starting the Kali VM again.
+After enabling virtualization, the VM started successfully.
+💡 What I Learned
+
+Through this project, I learned how to create and configure a virtual environment for cybersecurity practice.
+The most important concepts I learned include:
+1. NAT vs NAT Network
+
+A standard NAT configuration and a NAT Network serve different purposes.
+A NAT Network allows multiple VMs connected to the same virtual network to communicate with one another while providing network address translation for external connectivity.
+This makes it useful for building a multi-machine cybersecurity laboratory.
+
+2. Virtual Machine Networking
+
+I learned how VirtualBox virtual network adapters connect virtual machines to different types of networks and how network configuration affects communication between machines.
+
+3. Static IP Configuration
+
+I learned how to configure and verify IPv4 addressing, subnet masks, gateways, and DNS settings in Kali Linux.
+
+4. VM Snapshots
+
+I learned that a clean snapshot should be created before performing risky or experimental activities.
+This provides a known-good recovery point for future cybersecurity exercises.
+
+5. Documentation
+
+I learned that documenting commands, configuration, screenshots, problems, and solutions is an important part of a professional cybersecurity project.
+
+🔐 Security & Ethical Use
+
+This laboratory is intended strictly for education purposes only.
+
+🔗 Tools & Resources
+
+7-Zip: https://7-zip.org/download.html
+VirtualBox: https://virtualbox.org/wiki/Downloads
+Kali Linux: https://kali.org/get-kali
+
+👤 Author
+
+Priya Kishore Gehani
+Cybersecurity Professional B082
+LinkedIn: www.linkedin.com/in/priyagehani30
+📌 Project Information

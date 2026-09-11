@@ -65,6 +65,8 @@ It can be used for activities such as:
 ---
 
 ## 🏗️ Lab Architecture
+<img width="1346" height="616" alt="1-screenshot-title-image" src="https://github.com/user-attachments/assets/0da81949-bdcb-4ed7-b9ea-906b43b84aa0" />
+
 
 Additional target machines can be added to the same virtual network in future projects.
 

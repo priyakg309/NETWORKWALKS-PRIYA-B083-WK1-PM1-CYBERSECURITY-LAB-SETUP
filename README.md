@@ -189,12 +189,12 @@ Important: Network interface and connection names may differ between systems. St
 The VM initially failed to start because hardware virtualization was disabled in the system firmware/BIOS.
 
 The issue was resolved by:
- - 1.Restarting the computer.
- - 2.Entering BIOS/UEFI settings.
- - 3.Enabling Intel VT-x / hardware virtualization.
- - 4.Saving the configuration.
- - 5.Restarting the computer.
- - 6.Starting the Kali VM again.
+ - Restarting the computer.
+ - Entering BIOS/UEFI settings.
+ - Enabling Intel VT-x / hardware virtualization.
+ - Saving the configuration.
+ - Restarting the computer.
+ - Starting the Kali VM again.
 
 After enabling virtualization, the VM started successfully.
 
@@ -233,9 +233,9 @@ This laboratory is intended strictly for education purposes only.
 
 🔗 **Tools & Resources**
 
-7-Zip: https://7-zip.org/download.html
-VirtualBox: https://virtualbox.org/wiki/Downloads
-Kali Linux: https://kali.org/get-kali
+ - 7-Zip: https://7-zip.org/download.html
+ - VirtualBox: https://virtualbox.org/wiki/Downloads
+ - Kali Linux: https://kali.org/get-kali
 
 ---
 

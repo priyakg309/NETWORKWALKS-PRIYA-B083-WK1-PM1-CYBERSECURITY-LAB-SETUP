@@ -128,6 +128,7 @@ The VM was allocated:
 
 A shared folder was also configured for transferring required files between the host operating system and the Kali VM.
 
+
 ### Step 5. Configure the Kali Linux Network
 The Kali Linux network configuration was checked and configured with a consistent IPv4 address.
 
@@ -173,7 +174,7 @@ The snapshot represents the clean baseline of the laboratory. If a future exerci
 
 ## 🐞 Problems Encountered & Solutions
 
-****Problem 1. **Internet Connectivity After Static IP Configuration**
+****Problem 1.Internet Connectivity After Static IP Configuration**
 
 After manually configuring the IPv4 settings, Internet connectivity may fail depending on the Kali/NetworkManager configuration.
 One workaround used during this lab was:
@@ -184,8 +185,7 @@ Important: Network interface and connection names may differ between systems. St
 
 ---
 
-**Problem 2. VirtualBox VT-x / Virtualization Error
-**
+**Problem 2. VirtualBox VT-x / Virtualization Error**
 The VM initially failed to start because hardware virtualization was disabled in the system firmware/BIOS.
 The issue was resolved by:
 1.Restarting the computer.

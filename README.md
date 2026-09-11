@@ -17,7 +17,7 @@
   <img src="https://img.shields.io/badge/Kali%20Linux-red?style=flat-square&logo=kalilinux" />
   <img src="https://img.shields.io/badge/NetworkWalks-red?style=flat-square" />
   <img src="https://img.shields.io/badge/Ethical%20Hacking-orange?style=flat-square" />
-  <img src="https://img.shields.io/badge/Waqas%20Karim%20CCIE-red?style=flat-square" />
+  <img src="https://img.shields.io/badge/Priya Kishore%20Gehani%20CCIE-red?style=flat-square" />
 </p>
 
 ---

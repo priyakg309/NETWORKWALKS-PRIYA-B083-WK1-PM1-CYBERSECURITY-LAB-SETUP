@@ -241,7 +241,7 @@ Kali Linux: https://kali.org/get-kali
 👤 **Author**
 
 Priya Kishore Gehani
-Cybersecurity Professional B082
+Cybersecurity Professional B083
 LinkedIn: www.linkedin.com/in/priyagehani30
 
 ---

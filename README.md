@@ -199,7 +199,7 @@ After enabling virtualization, the VM started successfully.
 
 ----
 
-**💡 What I Learned**
+**💡 What I Learned** 
 
 Through this project, I learned how to create and configure a virtual environment for cybersecurity practice.
 The most important concepts I learned include:
